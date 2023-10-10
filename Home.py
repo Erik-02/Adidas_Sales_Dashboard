@@ -13,7 +13,7 @@ st.write('Main page')
 @st.cache_data
 def read_data():
     # Read in data
-    df = pd.read_excel('Adidas US Sales Datasets.xlsx', skiprows=4)
+    df = pd.read_csv('https://raw.githubusercontent.com/Erik-02/Adidas_Sales_Dashboard/main/Adidas%20US%20Sales%20Data.csv')
     # Data preprocessing
     # Drop unnnecessary columns
     df.drop(columns=['Unnamed: 0','Retailer ID'], inplace=True)
